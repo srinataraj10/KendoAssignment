@@ -1,0 +1,49 @@
+
+<!---New One--->
+
+<div *ngIf="login" class="float-child1">
+    <div class="first">
+        <img class="vectorNew" src="/assets/image/Mask group.png" alt="image">
+        <img class="img"  src="/assets/image/Group.png" alt="image">
+        <h3 class="content">Experience Seamless Stock Search Here</h3>
+        <p class="paraNew">Kanini Ticker Platform</p>
+        <img class="vector1" src="/assets/image/Vector1.png" alt="image">
+        </div>
+</div>
+
+
+
+<div *ngIf="!new" class="float-child2">
+    <img class="vector" src="/assets/image/Group 427318265.jpg" alt="image">
+    <h3 class="para">Sign In</h3>
+    <p class="para2">Welcome back! Please enter email id and password</p>
+    <div class="col-xs-10">
+        <form #f="ngForm">
+            <div  id="user-data" ngModelGroup="userData">
+               <div class="form-group">
+                <label class="lab" >Email Id</label>
+                <input class="form-control lab" type="email"  ngModel  name ="email"
+                required email #email ="ngModel">
+                <span class="help-block lab" *ngIf="!email.valid && email.touched">Please Enter a Valid Email</span>
+    
+                <div>
+                    <label class="lab">Password</label>
+                    <input class="form-control lab" type="password" ngModel  name ="password"
+                    required password #password ="ngModel" minlength="4" maxlength="12" >
+                    <span class="help-block lab" *ngIf="!password.valid && password.touched">Please Enter a Password</span>
+                </div>
+               </div>
+            </div>
+            <button [disabled]="!f.valid" class="btn btn-primary" style =" margin-left: 390px;"(click)="onSignIn()" type="submit">Sign In</button>
+            </form>
+    </div>
+</div>
+
+<app-homepage *ngIf="new"></app-homepage>
+
+
+
+
+
+
+

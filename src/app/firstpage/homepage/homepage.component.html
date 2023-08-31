@@ -1,0 +1,43 @@
+<div class="layout" *ngIf="!logout">
+    <img class="vector" src="/assets/image/Group 427318265.jpg" alt="image">
+    <a>
+        <img (click)="onLogut()" class="logoutNew" src="/assets/image/Frame 427319248.png" alt="image">
+    </a>
+    <div>
+        <h1 class="content">Investing Search Engine</h1>
+    </div>
+    <div>
+        <h3 class="content1">Experience Seamless Stock Search Here</h3>
+    </div>
+        <div class="wrapper">
+            <div class="search-input">
+                <input type="text" placeholder="Search For Stocks">
+                <div class="autocom-box">
+                    <li>Oil India Limited</li>
+                    <li>Oil & Natural Gas Corporation Limited</li>
+                </div>
+                <img class="icon" src="/assets/image/Group 427319259.png" alt="image">
+                 <div *ngFor="let value of suggestion">
+                   <p>{{value.data1}}</p>
+                   <p>{{value.data2}}</p>
+                   <p>{{value.data3}}</p>
+                   <p>{{value.data4}}</p>
+                </div>     
+            </div>
+        </div>
+        <div>
+            <h3 class="content1">What's Trending</h3> 
+        </div>
+        <div>
+            <img class="icon1" src="/assets/image/Frame 427319310.png" alt="image">
+        </div>
+        <div>
+            <img class="icon1" src="/assets/image/Frame 427319311.png" alt="image">
+        </div>
+</div>
+
+<img *ngIf="!logout" class="mask" src="/assets/image/Mask group (1).png" alt="image">
+
+<app-logout *ngIf="logout"></app-logout>
+
+
