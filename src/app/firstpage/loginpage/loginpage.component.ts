@@ -12,10 +12,7 @@ import { SharedService } from '../../shared.service';
 })
 export class LoginpageComponent {
 
-  constructor(private route:Router,
-              private shared:SharedService){
-                this.shared = shared
-              }
+  constructor(private route:Router,){}
   @Input() new = false;
   @Input() login = true;
  
@@ -28,10 +25,6 @@ export class LoginpageComponent {
     this.new = true;
     this.login = false;
     this.route.navigate(["home"]);
-   
-    
-    
-   
   }
 
 }

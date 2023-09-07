@@ -1,0 +1,148 @@
+
+
+
+.logoutImage{
+    float: left;
+}
+
+  .para {
+    margin-left: 400px;
+    margin-top: 60px;
+    width: 105px;
+    height: 39px;
+    top: 360px;
+    left: 1274px;
+  }
+  
+  .para2 {
+    margin-left: 400px;
+    width: 387px;
+    height: 19px;
+    top: 415px;
+    left: 1274px;
+  }
+  
+  .lab {
+    margin-left: 390px;
+  }
+  
+  
+  
+  
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  .first {
+    background: linear-gradient(
+      134.3deg,
+      #0088ce -45.11%,
+      rgba(0, 138, 207, 0.17) 90.72%
+    );
+    width: 600.011474609375px;
+    height: 1089.286376953125px;
+    top: -2.28631591796875px;
+    left: -110.87158203125px;
+    border-radius: 0px 0px 350px 0px;
+    opacity: 0.5px;
+  }
+  
+  .content {
+    text-align: center;
+    margin-left: 135px;
+  }
+  
+  .img {
+    width: 64px;
+    height: 64px;
+    top: 400px;
+    left: 143px;
+    display: block;
+    margin-left: 135px;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  
+  .paraNew {
+    margin-left: 145px;
+  }
+  
+  .vectorNew {
+    width: 192px;
+    height: 63.378639221191406px;
+    top: 18.310546875px;
+    left: 100px;
+    margin-left: 20px;
+  }
+  
+  .vector1 {
+    width: 200.7890625px;
+    height: 200.43096923828125px;
+    top: 300.7953491210938px;
+    left: -177px;
+    margin-top: 230px;
+  }
+  
+  .float-child1 {
+    width: 50%;
+    float: left;
+  }
+  
+  .float-child2 {
+    width: 50%;
+    float: left;
+  }
+
+  
+.logoutNew{
+    width: Hug (107px);
+    height: Hug (36px);
+    padding: 6px 8px 6px 8px;
+    border-radius: 50px;
+    border: 1px;
+    gap: 6px;
+    margin-left: 1570px;
+
+}
+
+.layout{
+    width: 1920px;
+    height: 100px;
+    
+}
+
+.vectorNew2 {
+    margin-left: 400px;
+    padding-top: 412px;
+    
+}
+
+.heading{
+  margin-left: 30px;
+}
+
+.vector4{
+  width: 20px;
+  height: 20px
+}
+
+.container{
+  margin-left: 20px;
+}
+
+/* #starValues{
+  margin-top: 10px;
+  background-image: url('/src/assets/image/download\ star.jpg');
+  background-repeat: no-repeat;
+  border-radius: 5px;
+
+} */
+
+/* .starValuesNew{
+  margin-top: 10px;
+} */
+
+
+
+
+  

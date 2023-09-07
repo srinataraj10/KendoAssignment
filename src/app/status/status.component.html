@@ -1,0 +1,274 @@
+<!---New One--->
+
+<div class="float-child1" *ngIf="data">
+  <div class="first">
+    <img class="vectorNew" src="/assets/image/Mask group.png" alt="image" />
+    <img class="img" src="/assets/image/Group.png" alt="image" />
+    <h3 class="content">Experience Seamless Stock Search Here</h3>
+    <p class="paraNew">Kanini Ticker Platform</p>
+    <img class="vector1" src="/assets/image/Vector1.png" alt="image" />
+  </div>
+</div>
+
+<div class="float-child2" *ngIf="data">
+  <img class="vectorNew2" src="/assets/image/Group 427318265.jpg" alt="image" />
+  <h3 class="para">Sign In</h3>
+  <p class="para2">Welcome back! Please enter email id and password</p>
+  <div class="col-xs-10">
+    <form #f="ngForm">
+      <div id="user-data" ngModelGroup="userData">
+        <div class="form-group">
+          <label class="lab">Email Id</label>
+          <input
+            class="form-control lab"
+            type="email"
+            ngModel
+            name="email"
+            required
+            email
+            #email="ngModel"
+          />
+          <span class="help-block lab" *ngIf="!email.valid && email.touched"
+            >Please Enter a Valid Email</span
+          >
+
+          <div>
+            <label class="lab">Password</label>
+            <input
+              class="form-control lab"
+              type="password"
+              ngModel
+              name="password"
+              required
+              password
+              #password="ngModel"
+              minlength="4"
+              maxlength="12"
+            />
+            <span
+              class="help-block lab"
+              *ngIf="!password.valid && password.touched"
+              >Please Enter a Password</span
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        [disabled]="!f.valid"
+        class="btn btn-primary"
+        style="margin-left: 390px"
+        type="submit"
+      >
+        Sign In
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="layout" *ngIf="!data && !new">
+  <img class="vector" src="/assets/image/Group 427318265.jpg" alt="image" />
+  <a>
+    <img
+      (click)="onLogout()"
+      class="logoutNew"
+      src="/assets/image/Frame 427319248.png"
+      alt="image"
+    />
+  </a>
+  <div>
+    <h2 class="heading" *ngFor="let newList of suggestionList">
+      {{ newList.name }}
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-block">
+            <img
+              class="vector4"
+              src="/assets/image/Vector (2).png"
+              alt="image"
+              class="img-fluid"
+            />
+            <div class="card-title">
+                <div class="card-text">Today's High</div>
+            </div>
+            <h4>144.65</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-block">
+            <img
+              class="vector4"
+              src="/assets/image/Group 33.png"
+              alt="image"
+              class="img-fluid"
+            />
+            <div class="card-title">
+                <div class="card-text">Today's Low</div>
+            </div>
+            <h4>142.55</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-block">
+            <img
+              class="vector4"
+              src="/assets/image/Group 33.png"
+              alt="image"
+              class="img-fluid"
+            />
+            <div class="card-title">
+                <div class="card-text">52 Week High</div>
+            </div>
+             <h4>194.95</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-block">
+            <img
+              class="vector4"
+              src="/assets/image/Group 33.png"
+              alt="image"
+              class="img-fluid"
+            />
+            <div class="card-title">
+                <div class="card-text">52 Week Low</div>
+            </div>
+            <h4>194.85</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+              <div class="card-block">
+                <img
+                  class="vector4"
+                  src="/assets/image/Group 427319281.png"
+                  alt="image"
+                  class="img-fluid"
+                />
+                <div class="card-title">
+                    <div class="card-text">Strengths</div>
+                    <p>Strong Annual EPS Growth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-block">
+                <img
+                  class="vector4"
+                  src="/assets/image/Group 427319282.png"
+                  alt="image"
+                  class="img-fluid"
+                />
+                <div class="card-title">
+                    <div class="card-text">Weakness</div>
+                    <p>Red Flag: High Interests
+                        Payments Compared to
+                        Earnings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-block">
+                <img
+                  class="vector4"
+                  src="/assets/image/Group 427319284.png"
+                  alt="image"
+                  class="img-fluid"
+                />
+                <div class="card-title">
+                    <div class="card-text">Opportunuties</div>
+                    <p>Strong Annual EPS Growth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-block">
+                <img
+                  class="vector4"
+                  src="/assets/image/Group 427319283.png"
+                  alt="image"
+                  class="img-fluid"
+                />
+                <div class="card-title">
+                    <div class="card-text">Threads</div>
+                    <p>No Thread for this Stock</p>
+
+                     <div class="row">
+                      <div class="col-md-3"> 
+                        <div class="card">
+                          <div class="card-block">
+                            <div class="card-title">
+                              <div class="card-text">Company Essentials</div>
+                              <p class="card-text">MARKETCAP </p>
+                              <p class="card-text">ENTERPRISESVALUE </p>
+                              <p class="card-text">NOOFSHARES </p>
+                              <p class="card-text">DIVYIELD </p>
+                              <p class="card-text">CASH </p>
+                              <p class="card-text">PROMOTERHOLDING </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </div>
+  </div>
+
+  <div class="container"> 
+      <div class="row">
+        <div class="col-md-3"> 
+            <div class="card-title">
+              <h4 class="card-title">Finstar</h4>
+              <img
+              class="vector4"
+              src="/assets/image/images star.png"
+              alt="image"
+              class="img-fluid"
+            />
+            </div>
+             <p>3.0 (90)</p>
+        </div>
+
+        <!--Working Code-->
+        <div class="row">
+            <input type="text" value="Ownership " id="starValues"/>
+            <div class="row">
+                <input type="text" value="Effiency" class="starValuesNew">
+            </div> 
+        </div>       
+  </div>
+  <app-loginpage *ngIf="data && new"></app-loginpage>
+</div>
+
+
