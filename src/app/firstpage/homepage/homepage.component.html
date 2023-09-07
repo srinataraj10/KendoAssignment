@@ -52,4 +52,4 @@
 
 <app-logout *ngIf="logout"></app-logout>
 
-<app-status [suggestionList]="suggestion"  *ngIf="searchPage"></app-status>
+<app-status [suggestionList]="suggestion"  *ngIf="searchPage && !logout"></app-status>

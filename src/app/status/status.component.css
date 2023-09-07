@@ -80,7 +80,7 @@
     height: 200.43096923828125px;
     top: 300.7953491210938px;
     left: -177px;
-    margin-top: 230px;
+    margin-top: 560px;
   }
   
   .float-child1 {
@@ -113,7 +113,7 @@
 
 .vectorNew2 {
     margin-left: 400px;
-    padding-top: 412px;
+    padding-top: 130px;
     
 }
 
@@ -129,19 +129,6 @@
 .container{
   margin-left: 20px;
 }
-
-/* #starValues{
-  margin-top: 10px;
-  background-image: url('/src/assets/image/download\ star.jpg');
-  background-repeat: no-repeat;
-  border-radius: 5px;
-
-} */
-
-/* .starValuesNew{
-  margin-top: 10px;
-} */
-
 
 
 

@@ -17,9 +17,6 @@ export class StatusComponent implements OnInit {
               private share:SharedService ){}
 
   ngOnInit(){
-    // console.log(this.suggestionList);
-    // this.newList = JSON.stringify(this.suggestionList);
-    // console.log(this.newList);
     this.share.dataList().subscribe((newList: any)=>{
       console.log(newList);
       this.newList = newList;

@@ -11,7 +11,6 @@ import { LogoutComponent } from './logout/logout.component';
 import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { StatusComponent } from './status/status.component';
-import { FinallogoutComponent } from './finallogout/finallogout.component';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { FinallogoutComponent } from './finallogout/finallogout.component';
     HomepageComponent,
     LogoutComponent,
     StatusComponent,
-    FinallogoutComponent 
   ],
   imports: [
     BrowserModule,
