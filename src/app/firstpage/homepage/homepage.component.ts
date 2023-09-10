@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { SharedService } from 'src/app/shared.service';
+
 
 
 @Component({
@@ -10,27 +10,24 @@ import { SharedService } from 'src/app/shared.service';
 })
 export class HomepageComponent {
 
-  constructor(private route:Router,
-    private shared:SharedService){}
+  constructor(private route:Router,){}
    logout = false;
    searchPage = false
    keyword = "name"
-   suggestionList: string = ''
+   suggestionList: any
 
 
     public suggestion = [
-    {name: "Oil India Limited", value: "NSE:ONGCA"},
-    {name: "Oil & Natural Gas Corporation Limited",  value: "NSE:OIL"},
+    {name: "Oil India Limited", value: "NSE:OIL"},
+    {name: "Oil & Natural Gas Corporation Limited",  value: "NSE:ONGCA"},
     {name: "Oil Country Tubular Limited", value: "NSE:OILCOUNTUB" },
     {name: "Dalmia Bharat Limited", value: "NSE:DALBHARAT"},
   ] 
 
   selectEvent(newList: any) {
     this.searchPage = true;
-    this.suggestionList = JSON.stringify(event);
+    this.suggestionList = newList;
     console.log("Test",this.suggestionList);
-    this.shared.setList(newList);
-    console.log("sddf", newList)
     this.route.navigate(["/status"])
   }
 

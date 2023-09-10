@@ -74,8 +74,8 @@
     />
   </a>
   <div>
-    <h2 class="heading" *ngFor="let newList of suggestionList">
-      {{ newList.name }}
+    <h2 class="heading" >
+      <p>{{suggestionList.name}}</p>
     </h2>
   </div>
 
@@ -86,14 +86,16 @@
           <div class="card-block">
             <img
               class="vector4"
-              src="/assets/image/Vector (2).png"
+              src="/assets/image/Group 33 (1).png"
               alt="image"
               class="img-fluid"
             />
             <div class="card-title">
-                <div class="card-text">Today's High</div>
+                <div class="card-text">
+                  <p>{{list[0].name}}</p>
+                </div>
             </div>
-            <h4>144.65</h4>
+            <h4>{{list[0].value}}</h4>
           </div>
         </div>
       </div>
@@ -103,14 +105,16 @@
           <div class="card-block">
             <img
               class="vector4"
-              src="/assets/image/Group 33.png"
+              src="/assets/image/Group 33 (2).png"
               alt="image"
               class="img-fluid"
             />
             <div class="card-title">
-                <div class="card-text">Today's Low</div>
+                <div class="card-text">
+                  <p>{{list[1].name}}</p>
+                </div>
             </div>
-            <h4>142.55</h4>
+            <h4>{{list[1].value}}</h4>
           </div>
         </div>
       </div>
@@ -120,14 +124,16 @@
           <div class="card-block">
             <img
               class="vector4"
-              src="/assets/image/Group 33.png"
+              src="/assets/image/Group 33 (3).png"
               alt="image"
               class="img-fluid"
             />
             <div class="card-title">
-                <div class="card-text">52 Week High</div>
+                <div class="card-text">
+                  <p>{{list[2].name}}</p>
+                </div>
             </div>
-             <h4>194.95</h4>
+             <h4>{{list[2].value}}</h4>
           </div>
         </div>
       </div>
@@ -137,14 +143,16 @@
           <div class="card-block">
             <img
               class="vector4"
-              src="/assets/image/Group 33.png"
+              src="/assets/image/Group 33 (4).png"
               alt="image"
               class="img-fluid"
             />
             <div class="card-title">
-                <div class="card-text">52 Week Low</div>
+                <div class="card-text">
+                  <p>{{list[3].name}}</p>
+                </div>
             </div>
-            <h4>194.85</h4>
+            <h4>{{list[3].value}}</h4>
           </div>
         </div>
       </div>
@@ -163,8 +171,8 @@
                   class="img-fluid"
                 />
                 <div class="card-title">
-                    <div class="card-text">Strengths</div>
-                    <p>Strong Annual EPS Growth</p>
+                    <div class="card-text">{{list[4].name}}</div>
+                    <p>{{list[4].value}}</p>
                 </div>
               </div>
             </div>
@@ -180,10 +188,8 @@
                   class="img-fluid"
                 />
                 <div class="card-title">
-                    <div class="card-text">Weakness</div>
-                    <p>Red Flag: High Interests
-                        Payments Compared to
-                        Earnings</p>
+                    <div class="card-text">{{list[5].name}}</div>
+                    <p>{{list[5].value}}</p>
                 </div>
               </div>
             </div>
@@ -199,8 +205,8 @@
                   class="img-fluid"
                 />
                 <div class="card-title">
-                    <div class="card-text">Opportunuties</div>
-                    <p>Strong Annual EPS Growth</p>
+                    <div class="card-text">{{list[6].name}}</div>
+                    <p>{{list[6].value}}</p>
                 </div>
               </div>
             </div>
@@ -216,21 +222,24 @@
                   class="img-fluid"
                 />
                 <div class="card-title">
-                    <div class="card-text">Threads</div>
-                    <p>No Thread for this Stock</p>
+                    <div class="card-text">{{list[7].name}}</div>
+                    <p>{{list[7].value}}</p>
 
                      <div class="row">
                       <div class="col-md-3"> 
                         <div class="card">
                           <div class="card-block">
                             <div class="card-title">
-                              <div class="card-text">Company Essentials</div>
-                              <p class="card-text">MARKETCAP </p>
-                              <p class="card-text">ENTERPRISESVALUE </p>
-                              <p class="card-text">NOOFSHARES </p>
-                              <p class="card-text">DIVYIELD </p>
-                              <p class="card-text">CASH </p>
-                              <p class="card-text">PROMOTERHOLDING </p>
+                              <div class="card-text">
+                                <h4>{{list[8].name}}</h4>
+                              </div>
+                               <hr>
+                              <p class="card-text">{{list[9].name}}{{list[9].value}}</p>
+                              <p class="card-text">{{list[10].name}}{{list[10].value}} </p>
+                              <p class="card-text">{{list[11].name}}{{list[11].value}} </p>
+                              <p class="card-text">{{list[12].name}}{{list[12].value}} </p>
+                              <p class="card-text">{{list[13].name}}{{list[13].value}} </p>
+                              <p class="card-text">{{list[14].name}}{{list[14].value}} </p>
                             </div>
                           </div>
                         </div>
@@ -245,25 +254,24 @@
 
   <div class="container"> 
       <div class="row">
-        <div class="col-md-3"> 
-            <div class="card-title">
-              <h4 class="card-title">Finstar</h4>
-              <img
-              class="vector4"
-              src="/assets/image/images star.png"
-              alt="image"
-              class="img-fluid"
-            />
-            </div>
-             <p>3.0 (90)</p>
-        </div>
-
+   <div class="col-md-3">
+    <div class="card-title">
+      <h4 class="card-title">Finstar</h4>
+      <rating  [(ngModel)]="value" 
+      [max]="max" 
+      [readonly]="false" 
+      class="rating"></rating>
+    </div>
+   </div>
+ 
         <div class="row">
-            <input type="text" value="Ownership"/>
+            <input type ="text" value="Ownership"/>
+            <input style="margin-left: 25px;" type ="text" value="Valuation"/>
             <div class="row">
-                <input type="text" value="Effiency">
+                <input style ="margin-top: 20px;" type="text" value="Effiency">
+                <input style="margin-left: 25px;" type="text" value="Financials">
             </div> 
-        </div>       
+        </div>     
   </div>
   <app-loginpage *ngIf="data && new"></app-loginpage>
 </div>

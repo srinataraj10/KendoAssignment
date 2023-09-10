@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SharedService } from '../shared.service';
+import * as searchDetails from 'src/assets/json/data.json'
+
 
 @Component({
   selector: 'app-status',
@@ -8,19 +9,20 @@ import { SharedService } from '../shared.service';
   styleUrls: ['./status.component.css']
 })
 export class StatusComponent implements OnInit {
-  @Input() suggestionList: any[] = [];
+  
+  @Input() suggestionList: any;
+ 
   public newList:any    
   public data = false;
   public new = false;
+  public list: any = searchDetails;
+  max: number = 5;
+  value: number = 3;
 
-  constructor(private route:Router,
-              private share:SharedService ){}
+  constructor(private route:Router,){}
 
   ngOnInit(){
-    this.share.dataList().subscribe((newList: any)=>{
-      console.log(newList);
-      this.newList = newList;
-    })
+    console.log("List", this.list);
   }
 
   onLogout(){

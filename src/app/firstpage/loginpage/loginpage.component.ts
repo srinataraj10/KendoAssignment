@@ -1,7 +1,6 @@
 import { Component, ViewChild, Input,  Output } from '@angular/core';
 import {NgForm} from '@angular/forms'
 import { Router } from '@angular/router';
-import { SharedService } from '../../shared.service';
 
 
 
@@ -15,9 +14,6 @@ export class LoginpageComponent {
   constructor(private route:Router,){}
   @Input() new = false;
   @Input() login = true;
- 
-
-  
   @ViewChild('f') 'singupForm': NgForm;
 
 

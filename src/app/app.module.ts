@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { StatusComponent } from './status/status.component';
+import { RatingModule  } from 'ngx-bootstrap/rating';
 
 
 @NgModule({
@@ -20,13 +21,16 @@ import { StatusComponent } from './status/status.component';
     HomepageComponent,
     LogoutComponent,
     StatusComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AutocompleteLibModule,
-    TypeaheadModule
+    TypeaheadModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

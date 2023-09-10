@@ -88,3 +88,18 @@ input.ng-invalid.ng-touched {
   width: 50%;
   float: left;
 }
+
+@media only screen and (min-width:280px) and (max-width:1024px){
+   .float-child1{
+    display :none
+  }
+
+  .float-child2{
+    float: left;
+    width: 100%;
+    overflow: scroll 
+  }
+}
+
+
+

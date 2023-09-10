@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SharedService } from './shared.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,7 @@ import { SharedService } from './shared.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private route:Router,
-    private shared: SharedService){}
+  constructor(private route:Router,){}
   title = 'sampleproject';
   @Input() login = false;
   @Input() data = true;
