@@ -125,26 +125,22 @@ top: 100px;
   color:blue;
 }
 
-@media only screen and (min-width:280px) and (max-width:1024px){
+@media only screen and (min-width:280px) and (max-width:1180px){
  .layout{
    width: 100%;
-   overflow: scroll 
  }
 
  .wrapper{
    width: 100%;
-   overflow: scroll 
  }
 
  .ng-autocomplete{
   width: 100%;
   margin-right: 10px;
-  overflow: scroll 
  }
 
  .icon1{
   margin-left: 0px;
-  overflow: scroll 
 }
 
 
