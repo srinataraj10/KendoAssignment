@@ -63,7 +63,11 @@
      {
         "name":"PROMOTERHOLDING",
         "value":"58.89"    
-     }
+     },
+     {
+      "name":"PROMOTERHOLDINGS",
+      "value":"58.89"    
+   }
      
 ]
 
